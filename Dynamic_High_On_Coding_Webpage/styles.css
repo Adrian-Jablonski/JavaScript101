@@ -1,0 +1,26 @@
+body {
+    background-color: lightsteelblue
+}
+
+h1 {
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.highlighted_image, .thumbnail {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.small_images {
+    margin: 5px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+.current_image {
+    border: 5px solid black;
+    max-height: 65px;
+    margin: 0
+}
