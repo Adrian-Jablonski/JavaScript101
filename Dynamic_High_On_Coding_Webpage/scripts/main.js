@@ -15,6 +15,7 @@ headingElement.appendChild(headingText);
 headingElement.appendChild(headingText);
 
 var currentDiv = document.getElementById("container");
-document.body.insertBefore(headingElement, currentDiv);
+document.body.insertBefore(navigationTop, currentDiv);
+//document.body.insertBefore(headingElement, currentDiv);
 
 
