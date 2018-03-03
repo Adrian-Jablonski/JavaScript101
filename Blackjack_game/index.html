@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blackjack Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div id="table">
+
+            <div id="messages">Select bet and click deal to start game</div>
+            
+            <div id="dealer-section">
+                <label>Dealer:</label>
+
+                <label id="dealer-points" class="points"></label>
+                <p id="dealer-cash" class="cash">Cash $</p>
+                <div id="dealer-hand" class="hand">
+                    <img id="dealer-card0" class="dealer-card">
+                    <img id="dealer-card1" class="dealer-card">
+                    <img id="dealer-card2" class="dealer-card">
+                    <img id="dealer-card3" class="dealer-card">
+                    <img id="dealer-card4" class="dealer-card">
+                    <img id="dealer-card5" class="dealer-card">
+                    <img id="dealer-card6" class="dealer-card">
+                </div>
+            </div>
+            <div id="player-section">
+                <label>Player: </label>
+                <label id="player-points" class="points"></label>
+                <p id="player-cash" class="cash">Cash $</p>
+
+                <div id="player-hand" class="hand">
+                    <img id="player-card0" class="player-card">
+                    <img id="player-card1" class="player-card">
+                    <img id="player-card2" class="player-card">
+                    <img id="player-card3" class="player-card">
+                    <img id="player-card4" class="player-card">
+                    <img id="player-card5" class="player-card">
+                    <img id="player-card6" class="player-card">
+                </div>
+            </div>
+            <div id="pot">Pot : $0</div>
+            <div id="betting-section">
+                <br>
+                <input type="button" id="minus" value="-" onclick="decreaseBet()">
+                <input id="bet" name="breakTime" value= "5">
+                <input type="button" id="plus" value="+" onclick="increaseBet()">
+            </div>
+            <div class="buttons">
+
+                <button id="hit-button" onclick="hit()">Hit</button>
+                
+                <button id="deal-button" onclick="deal()">Deal</button>
+
+                <button id="stand-button" onclick="stand()">Stand</button>
+
+            </div>
+        
+        </div>
+
+    </body>
+    <script type="text/javascript" src="scripts/blackjack.js"></script>
+</html>
