@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+
+}
+
+.background-picture {
+    /* The image used */
+    position: fixed;
+    top: 0;
+    height: 100%; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#weather-section {
+    margin: 10px 20% 0px 20%;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: rgba(211, 211, 211, .3);
+    padding: 10px;
+    height: 170px;
+    text-align: center;
+}
+
+#location {
+    width: 260px;
+    margin-bottom: 5px;
+}
+
+#current-location, #current-country, #local-time {
+    font-size: 20px;
+}
+
+#current-location {
+    margin-bottom: 0px;
+}
+
+#weather-box {
+    font-size: 20px;
+}
+
+#local-time {
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#location-info {
+    margin-left: 40px;
+}
+
+#current-location, #current-country {
+    font-weight: 700;
+    text-align: center;
+    opacity: 1;
+}
+
+#status {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#weather-information {
+    margin: 20px 20% 0 20%;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: rgba(224, 255, 255, .3);
+}
+
+#weather-status {
+    text-align: center;
+}
