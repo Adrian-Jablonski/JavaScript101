@@ -26,6 +26,20 @@ body, html {
     text-align: center;
 }
 
+#metric, #imperial {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    color: blue;
+} 
+
+#metric {
+    margin-left: 5px;
+    border-left: 1px solid black;
+    padding-left: 4px;
+}
+
+
 #location {
     width: 260px;
     margin-bottom: 5px;
@@ -39,6 +53,29 @@ body, html {
     margin-bottom: 0px;
 }
 
+#condition {
+    margin: -10px 0;
+}
+
+#current-temp {
+    font-size: 20px;
+}
+
+#current-temp, #weather-icon {
+    display: inline-block;
+}
+
+#max-min-section {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+#max-min-description {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
 #weather-box {
     font-size: 20px;
 }
@@ -47,6 +84,16 @@ body, html {
     text-align: right;
     font-style: italic;
     font-size: 14px;
+    margin-bottom: -2px;
+    margin-top: -15px;
+    clear: both;
+}
+
+#source {
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    margin-right: 3px;
 }
 
 #location-info {
@@ -73,4 +120,13 @@ body, html {
 
 #weather-status {
     text-align: center;
+}
+
+#sunrise {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sunset {
+    display: inline-block;
 }
