@@ -31,7 +31,6 @@ app.get("/greet/:name", function(req, res) {
 //     var yearBorn = 2018 - age;
 //     res.send("You were born in " + yearBorn)
 // })
-
 app.get("/year", function(req, res) {
     var age = req.query.age;
     var yearBorn = 2018 - age;
