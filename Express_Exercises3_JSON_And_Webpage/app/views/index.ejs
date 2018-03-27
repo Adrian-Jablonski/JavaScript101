@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+      <% include partials/template/header.ejs %>
+      <%if(imgURLAll.length > 0) { %>
+        <%for(var i = 0; i < imgURLAll.length; i++) { %>
+          <img src="<%= imgURLAll[i] %>">
+          <%} %>
+          <%} %>
+      <% include partials/template/footer.ejs %>
+
+  </body>
+</html>

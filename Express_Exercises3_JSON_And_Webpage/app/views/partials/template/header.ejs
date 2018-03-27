@@ -1,0 +1,14 @@
+<header>
+  <div id="navbar">
+    <label class="home"><a href="../">Home</a></label>
+    <label class="pet"><a href="/pets/0">Dog</a></label>
+    <label class="pet"><a href="/pets/1">Cat</a></label>
+    <label class="pet"><a href="/pets/2">Parrot</a></label>
+    <label class="pet"><a href="/pets/3">Fish</a></label>
+    <label class="pet"><a href="/pets/4">Hamster</a></label>
+    <label class="contact"><a href="/feedback">Contact</a></label>
+  </div>
+  <% if (typeof imgURL !== "undefined") { %>
+  <img src=<%= imgURL %>>
+  <%} %>
+</header>

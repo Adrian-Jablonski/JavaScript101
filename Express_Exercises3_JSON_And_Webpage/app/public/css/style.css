@@ -1,0 +1,27 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: grey;
+    height: 100px;
+    padding-top: 20px;
+}
+
+#navbar {
+    background-color: black;
+}
+
+.pet, .home, .contact {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#content {
+    min-height: 350px;
+}

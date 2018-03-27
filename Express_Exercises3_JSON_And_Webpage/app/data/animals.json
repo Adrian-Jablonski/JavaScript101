@@ -1,0 +1,28 @@
+{
+    "pets": [{
+            "name":"Dog",
+            "description":"An image of a dog",
+            "imgURL":"/images/pets/dog.jpg"
+        },
+        {  
+            "name":"Cat",
+            "description":"An image of a kitten",
+            "imgURL":"/images/pets/cat.jpg"
+        },
+        {  
+            "name":"Parrot",
+            "description":"An image of a parrot",
+            "imgURL":"/images/pets/parrot.jpg"
+        },
+        {  
+            "name":"Fish",
+            "description":"An image of a fish",
+            "imgURL":"/images/pets/fish.jpg"
+        },
+        {  
+            "name":"Hamster",
+            "description":"An image of a hamster",
+            "imgURL":"/images/pets/hamster.jpg"
+    }]
+    
+}
