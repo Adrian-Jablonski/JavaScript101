@@ -9,7 +9,6 @@
 // must run nodemon app.js from same path. Errors show up if running from another folder
 
 var express = require("express");
-//var reload = require("reload")
 var app = express();
 app.use(express.static("public"));
 var http = require("http").Server(app);
@@ -20,10 +19,6 @@ app.set("view engine", "ejs");  // Sets up EJS
 app.set("views", "views")
 
 app.use(require("./routes/"));
-
-// app.get("/", function(req, res) {
-//     res.sendFile("index.html", {root: "public/html"});
-// });
 
 app.get("/", function(req, res) {
     res.sendFile("index.ejs", {root: "views"});
@@ -65,19 +60,3 @@ http.listen(port, function(){
     console.log("Listening on port", port,"!");
 });
 
-
-// app.use(express.static("public"));
-// var bodyParser = require('body-parser')
-
-// app.set("view engine", "ejs");  // Sets up EJS
-// app.set("views", "views")   // Tells where to find the file. This depends on where the package.json files are saved and configured.
-
-// app.use(require("./routes/")); // Links to files
-// app.use(require("./routes/api"));
-
-// port = 3005
-// app.listen(port, function(){
-//     console.log("Port", port, "!");
-// });
-
-//reload(server, app);
