@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO Chat</title>
+  </head>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/js/chat.js"></script>
+  <body>
+    <h1 class="welcome">Welcome to the chatroom. Please enter your username below</h1><br>
+    <div id="user-name-section">
+      <h3 class="user-name-text">User Name:</h3>
+      <h3 class="user-name"></h3>
+      <input id="user-name"/>
+      <button id="log-in">Log In</button>
+      
+    </div>
+    
+    <div id="chat-section">
+        <ul id="messages">
+        </ul>
+        <p id="user-typing"></p>
+        <form id="message-submission" action="none">
+          <input id="m" autocomplete="off" /><button>Send</button>
+        </form>
+    </div>
+    <div id="user-list">
+      <h2>Online Users</h2>
+      <ul id="online-users">
+
+      </ul>
+    </div>
+    
+  </body>
+</html>
