@@ -1,0 +1,38 @@
+<div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Album ID</h1>
+            </div>
+            <div class="col-sm">
+                <h2>Album Name</h1>
+            </div>
+            <div class="col-sm">
+                <h2>Album Year</h1>
+            </div>
+            <div class="col-sm">
+                <h2>Artist ID</h1>
+            </div>
+        </div>
+    </div>
+<% if (albums.length > 0) { %>
+<% for (i=0; i< albums.length; i++) { %>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p><%= albums[i].id %></p>
+            </div>
+            <div class="col-sm">
+                <p><%= albums[i].album_name %></p>
+            </div>
+            <div class="col-sm">
+                <p><%= albums[i].album_year %></p>
+            </div>
+            <div class="col-sm">
+                <p><%= albums[i].artist_id %></p>
+            </div>
+        </div>
+    </div>
+
+<br>
+<% } %>
+<% } %>

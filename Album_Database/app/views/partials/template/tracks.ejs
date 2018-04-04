@@ -1,0 +1,38 @@
+<div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Track ID</h1>
+            </div>
+            <div class="col-sm">
+                <h2>Track Name</h1>
+            </div>
+            <div class="col-sm">
+                <h2>Album ID</h1>
+            </div>
+            <div class="col-sm">
+                <h2>Track Duration</h1>
+            </div>
+        </div>
+    </div>
+<% if (tracks.length > 0) { %>
+<% for (i=0; i< tracks.length; i++) { %>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p><%= tracks[i].id %></p>
+            </div>
+            <div class="col-sm">
+                <p><%= tracks[i].track_name %></p>
+            </div>
+            <div class="col-sm">
+                <p><%= tracks[i].album_id %></p>
+            </div>
+            <div class="col-sm">
+                <p><%= tracks[i].track_duration %></p>
+            </div>
+        </div>
+    </div>
+
+<br>
+<% } %>
+<% } %>
