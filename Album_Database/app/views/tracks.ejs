@@ -6,6 +6,17 @@
     </head>
     <body>
             <% include partials/template/header.ejs %>
+            <h2>Add New Track</h2>
+            <form action="/tracks" method="POST">
+
+                <b>Track name:</b><input type="text" name="track_name" />
+                <b>Album ID:</b><input class="id" type="number" min="1" name="album_id" />
+                <b>Track Duration:</b><input id="minutes" type="number" min="0" name="minutes" />Minutes
+                <input id="seconds" type="number" min="0" max="59" name="seconds" />Seconds 
+            
+            <input type="submit" />
+            </form>
+            <br>
             <% include partials/template/tracks.ejs %>
     </body>
 </html>

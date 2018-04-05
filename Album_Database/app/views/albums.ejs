@@ -5,7 +5,20 @@
         <title>Albums</title>
     </head>
     <body>
-            <% include partials/template/header.ejs %>
-            <% include partials/template/albums.ejs %>
+        <% include partials/template/header.ejs %>
+        <div id="content">
+            <h2>Add New Album</h2>
+            <form action="/albums" method="POST">
+
+                <b>Album Name:</b> <input type="text" name="album_name" />
+                <b>Album Year:</b><input class="year" type="number" min="1900" max="2020" name="album_year" />
+                <b>Artist ID:</b><input class="id" type="number" min="1" name="artist_id" />
+            
+                <input type="submit" />
+                
+            </form>
+            <br>
+        </div>
+        <% include partials/template/albums.ejs %>
     </body>
 </html>

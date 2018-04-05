@@ -6,6 +6,13 @@
     </head>
     <body>
         <% include partials/template/header.ejs %>
+        <h2>Add New Artist</h2>
+            <form action="/artists" method="POST">
+
+                <b>Artist name:</b><input type="text" name="artist_name" />
+            
+            <input type="submit" />
+            </form>
         <% include partials/template/artists.ejs %>
             
     </body>

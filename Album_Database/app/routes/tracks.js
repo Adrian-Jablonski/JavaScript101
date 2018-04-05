@@ -1,5 +1,6 @@
 var express = require("express");
 var router = express.Router();
+var appModule = require('../app.js')
 var promise = require('bluebird');
 var pgp = require('pg-promise')(options);
 var connectionString = 'postgres://localhost:5432/album';

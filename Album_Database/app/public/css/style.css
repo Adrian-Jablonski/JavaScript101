@@ -1,3 +1,12 @@
+body {
+    background-color: lightblue;
+}
+
+#content {
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+
 #minutes, #seconds {
     width: 50px;
 }
@@ -15,4 +24,8 @@
 #navbar {
     background-color: black;
     height: 40px;
+}
+
+.dataRow {
+    margin-bottom: -35px;
 }
